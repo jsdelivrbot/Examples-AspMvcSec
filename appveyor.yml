@@ -1,0 +1,11 @@
+build:
+  project: AspMVC.sln 
+
+services:
+  - mssql2014
+
+before_build:
+  - nuget restore
+
+configuration: Debug
+
