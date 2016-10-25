@@ -1,5 +1,5 @@
 build:
-  project: AspMVC.sln 
+  project: AspMVCSec.sln 
 
 services:
   - mssql2014
