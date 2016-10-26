@@ -89,6 +89,9 @@
       <HintPath>..\..\packages\NWebsec.Core.1.5.0\lib\45\NWebsec.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="NWebsec.Mvc">
+      <HintPath>..\..\packages\NWebsec.Mvc.4.2.0\lib\45\NWebsec.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -221,14 +224,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SecurityConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="DataAccess\CommentsRepository.cs" />
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DataAccess\ICommentsRepository.cs" />
     <Compile Include="DataAccess\IUserRepository.cs" />
-    <Compile Include="Controllers\UserListController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DataAccess\UserRepository.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\UserSummary.cs" />
@@ -288,11 +294,14 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\UserList\Index.cshtml" />
-    <Content Include="Views\UserList\Create.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
     <Content Include="Views\Home\CreateComment.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\File\" />
+    <Folder Include="Views\Report\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

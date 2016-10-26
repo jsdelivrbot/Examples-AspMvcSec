@@ -103,9 +103,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Round2_ClickJacking.html" />
-    <Content Include="Round1_CORS.html" />
+    <Content Include="Round2_XSS.html" />
+    <Content Include="Round4_ClickJacking.html" />
+    <Content Include="Round3_CORS.html" />
     <Content Include="Index.html" />
+    <Content Include="Round1_CSP.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,10 +1,12 @@
 ﻿using System.Web.Mvc;
 using AspMvcSec.DataAccess;
 using AspMvcSec.Models;
+using NWebsec.Mvc.HttpHeaders;
 
 namespace AspMvcSec.Controllers
 {
-  [Authorize]
+  //// X-Frame-Options
+  [XFrameOptions(Policy = XFrameOptionsPolicy.Deny)]
   public class HomeController : Controller
   {
     private ICommentsRepository _commentsRepository;
@@ -31,6 +33,7 @@ namespace AspMvcSec.Controllers
     }
 
     [HttpPost]
+    [ValidateInput(false)]
     public ActionResult CreateComment(Comment comment)
     {
       _commentsRepository.Add(comment);

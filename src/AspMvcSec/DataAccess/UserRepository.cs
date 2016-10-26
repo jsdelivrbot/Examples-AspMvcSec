@@ -22,7 +22,7 @@ namespace AspMvcSec.DataAccess
 
     public void Add(User user)
     {
-      _connection.Execute("Insert into [User](login, name, description,email)values(@login,@name,@description,@email)", user);
+      _connection.Execute("Insert into [User](login, name, description,email, password)values(@login,@name,@description,@email, 'sa')", user);
     }
 
     public void Delete(int id)
