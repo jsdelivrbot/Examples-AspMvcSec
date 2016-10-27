@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using AspMvcSec.Infrastructure;
 using NWebsec.Mvc.HttpHeaders;
 using NWebsec.Mvc.HttpHeaders.Csp;
 
@@ -10,7 +11,7 @@ namespace AspMvcSec
     {
       filters.Add(new HandleErrorAttribute());
 
-      #region round1
+      #region CSP
       filters.Add(new CspAttribute() );
       filters.Add(new CspScriptSrcAttribute()
       {
@@ -21,17 +22,16 @@ namespace AspMvcSec
 
       #endregion
 
-      #region round2
-
-      #endregion
-
-      #region round3
+      #region XFrameOptions
 
       // XFrameOptions
       // filters.Add(new XFrameOptionsAttribute() { Policy = XFrameOptionsPolicy.Deny });
 
       #endregion
 
+      #region hsts
+      // filters.Add(new RedirectToHttpsAttribute());
+      #endregion
     }
   }
 }

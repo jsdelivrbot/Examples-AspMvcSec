@@ -33,6 +33,7 @@ namespace AspMvcSec.Controllers
     }
 
     [HttpPost]
+    //// XSS
     [ValidateInput(false)]
     public ActionResult CreateComment(Comment comment)
     {
