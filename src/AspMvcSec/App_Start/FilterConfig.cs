@@ -13,10 +13,19 @@ namespace AspMvcSec
 
       #region CSP
       //filters.Add(new CspAttribute() );
+      //filters.Add(new CspDefaultSrcAttribute()
+      //{
+      //  CustomSources = "localhost:* ws://localhost:* code.jquery.com:*",                
+      //});
       //filters.Add(new CspScriptSrcAttribute()
       //{
       //  CustomSources = "localhost:* ws://localhost:* code.jquery.com:*",
-      //  UnsafeInline = true
+      //  UnsafeInline = true,        
+      //});
+      //filters.Add(new CspStyleSrcAttribute()
+      //{
+      //  CustomSources = "localhost:* ws://localhost:* code.jquery.com:*",
+      //  UnsafeInline = true,
       //});
 
       //filters.Add(new CspReportUriAttribute(){ ReportUris  = "http://localhost:50297/Report" });
