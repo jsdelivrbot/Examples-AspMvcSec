@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.Http.Cors;
 using System.Web.Mvc;
 using AspMvcSec.DataAccess;
 using AspMvcSec.Models;
@@ -7,8 +8,7 @@ using NWebsec.Mvc.HttpHeaders;
 namespace AspMvcSec.Controllers
 {
   //// CORS
-  //[EnableCors("*","","")]
-  [Authorize]
+  [EnableCors("*","","")]
   public class UsersController : Controller
   { 
     private IUserRepository _repository;
@@ -43,6 +43,9 @@ namespace AspMvcSec.Controllers
     }
 
     // POST: UserList/Create
+    #region // CSRF
+    //[ValidateAntiForgeryToken]
+    #endregion
     [HttpPost]
     public ActionResult Create(User user)
     {

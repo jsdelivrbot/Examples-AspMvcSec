@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Web.Helpers;
+using System.Web.Mvc;
 using AspMvcSec.Infrastructure;
 using NWebsec.Mvc.HttpHeaders;
 using NWebsec.Mvc.HttpHeaders.Csp;
@@ -12,15 +13,15 @@ namespace AspMvcSec
       filters.Add(new HandleErrorAttribute());
 
       #region CSP
-      //filters.Add(new CspAttribute() );
+      //filters.Add(new CspAttribute());
       //filters.Add(new CspDefaultSrcAttribute()
       //{
-      //  CustomSources = "localhost:* ws://localhost:* code.jquery.com:*",                
+      //  CustomSources = "localhost:* ws://localhost:* code.jquery.com:*",
       //});
       //filters.Add(new CspScriptSrcAttribute()
       //{
       //  CustomSources = "localhost:* ws://localhost:* code.jquery.com:*",
-      //  UnsafeInline = true,        
+      //  UnsafeInline = true,
       //});
       //filters.Add(new CspStyleSrcAttribute()
       //{
@@ -35,7 +36,7 @@ namespace AspMvcSec
       #region XFrameOptions
 
       // XFrameOptions
-      // filters.Add(new XFrameOptionsAttribute() { Policy = XFrameOptionsPolicy.Deny });
+      //filters.Add(new XFrameOptionsAttribute() { Policy = XFrameOptionsPolicy.Deny });
 
       #endregion
 
