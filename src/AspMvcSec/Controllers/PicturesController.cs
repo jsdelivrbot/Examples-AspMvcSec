@@ -6,12 +6,12 @@ using System.Web.Mvc;
 
 namespace AspMvcSec.Controllers
 {
-    public class PictureController : Controller
+    public class PicturesController : Controller
     {
         // GET: File
         public ActionResult Index(string fileName)
         {
-            return File(System.IO.File.ReadAllBytes(AppDomain.CurrentDomain.BaseDirectory+"\\App_Data\\Pictures\\"+fileName), "image/png");
+            return File(System.IO.File.ReadAllBytes(AppDomain.CurrentDomain.BaseDirectory+"\\App_Data\\Pictures\\"+fileName), "application");
         }
     }
 }

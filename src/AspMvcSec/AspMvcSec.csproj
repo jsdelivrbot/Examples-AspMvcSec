@@ -228,7 +228,7 @@
     <Compile Include="App_Start\SecurityConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\PictureController.cs" />
+    <Compile Include="Controllers\PicturesController.cs" />
     <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="DataAccess\CommentsRepository.cs" />
     <Compile Include="Models\Comment.cs" />
