@@ -12,12 +12,13 @@ namespace AspMvcSec
       filters.Add(new HandleErrorAttribute());
 
       #region CSP
-      filters.Add(new CspAttribute() );
-      filters.Add(new CspScriptSrcAttribute()
-      {
-        CustomSources = "localhost:* ws://localhost:* code.jquery.com:*",
-        UnsafeInline = true
-      });
+      //filters.Add(new CspAttribute() );
+      //filters.Add(new CspScriptSrcAttribute()
+      //{
+      //  CustomSources = "localhost:* ws://localhost:* code.jquery.com:*",
+      //  UnsafeInline = true
+      //});
+
       //filters.Add(new CspReportUriAttribute(){ ReportUris  = "http://localhost:50297/Report" });
 
       #endregion
