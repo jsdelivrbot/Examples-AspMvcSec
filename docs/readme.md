@@ -14,4 +14,10 @@ Open
 - @Html.AntiForgeryToken – off
 - [Authorize] check
 
+# Uwagi
+- które wersje przegl¹darek suportuj¹ dane nag³ówki
+- pokazaæ dok³adniej jak skonstruowane s¹ skrypty
+- google web hacking library
+
+
 
