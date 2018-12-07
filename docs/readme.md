@@ -2,21 +2,21 @@
 Open 
 - mbank 
 - krd 
-- harlem shake https://rawgit.com/moovweb/harlem_shaker/master/harlem-shake-script.js
+- harlem shake https://cdn.jsdelivr.net/gh/moovweb/harlem_shaker/harlem-shake-script.js
 
 # Reset
-- Cors – on (web.config/UsersControlelr)
-- ValidateInput – on 
+- Cors ï¿½ on (web.config/UsersControlelr)
+- ValidateInput ï¿½ on 
 - AllowHttp - on
 - CSP (filters) off
 - XFrameOptions (filters) off
-- ValidateAntiForgeryToken – off
-- @Html.AntiForgeryToken – off
+- ValidateAntiForgeryToken ï¿½ off
+- @Html.AntiForgeryToken ï¿½ off
 - [Authorize] check
 
 # Uwagi
-- które wersje przegl¹darek suportuj¹ dane nag³ówki
-- pokazaæ dok³adniej jak skonstruowane s¹ skrypty
+- ktï¿½re wersje przeglï¿½darek suportujï¿½ dane nagï¿½ï¿½wki
+- pokazaï¿½ dokï¿½adniej jak skonstruowane sï¿½ skrypty
 - google web hacking library
 
 
